@@ -34,7 +34,12 @@
   },
   "name":"PolarOpposites",
   "resources":[
+    {"id":{"name":"Obj_controller","path":"objects/Obj_controller/Obj_controller.yy",},},
+    {"id":{"name":"Obj_countryPlayer","path":"objects/Obj_countryPlayer/Obj_countryPlayer.yy",},},
+    {"id":{"name":"Obj_planet","path":"objects/Obj_planet/Obj_planet.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Spr_planet","path":"sprites/Spr_planet/Spr_planet.yy",},},
+    {"id":{"name":"Spr_space","path":"sprites/Spr_space/Spr_space.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
