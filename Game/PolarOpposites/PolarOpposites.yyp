@@ -50,6 +50,7 @@
     {"id":{"name":"Spr_planet","path":"sprites/Spr_planet/Spr_planet.yy",},},
     {"id":{"name":"Spr_purpleTip","path":"sprites/Spr_purpleTip/Spr_purpleTip.yy",},},
     {"id":{"name":"Spr_redTip","path":"sprites/Spr_redTip/Spr_redTip.yy",},},
+    {"id":{"name":"Spr_rocketBaseEnemy","path":"sprites/Spr_rocketBaseEnemy/Spr_rocketBaseEnemy.yy",},},
     {"id":{"name":"Spr_rocketBasePlayer","path":"sprites/Spr_rocketBasePlayer/Spr_rocketBasePlayer.yy",},},
     {"id":{"name":"Spr_space","path":"sprites/Spr_space/Spr_space.yy",},},
     {"id":{"name":"Spr_yellowTip","path":"sprites/Spr_yellowTip/Spr_yellowTip.yy",},},

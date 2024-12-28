@@ -1,5 +1,7 @@
-range=16
+range=10
 vectors = [[irandom(range)-range/2,irandom(range)-range/2]];
+
+if(irandom(1) == 1){ team = "enemy"; }
 
 colors = ["blue","green","orange","purple","red","yellow"]
 
