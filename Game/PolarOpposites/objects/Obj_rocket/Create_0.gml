@@ -16,6 +16,6 @@ try{array_push(vectors,[0,0])}
 catch(_exception){
 	vectors = [[0,0],[0,0]]
 }
-resistancePercent = 0.005;
+resistancePercent = 0.0025;
 
 

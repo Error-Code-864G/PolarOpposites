@@ -24,7 +24,7 @@ if(scrap >= 1){
 }
 
 if(mouse_check_button(mb_left)) && (missileBuilding != "none"){
-	instance_create_layer(x,y,"instances_1",Obj_rocket,{ vectors : [[(mouse_x-x)/40,(mouse_y-y)/40]], color : missileBuilding })
+	instance_create_layer(x,y,"instances_1",Obj_rocket,{ vectors : [[(mouse_x-x)/30,(mouse_y-y)/30]], color : missileBuilding })
 	missileBuilding = "none";
 	scrap -= 1;
 }
