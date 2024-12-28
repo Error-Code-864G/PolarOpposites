@@ -43,6 +43,7 @@
     {"id":{"name":"Obj_planet","path":"objects/Obj_planet/Obj_planet.yy",},},
     {"id":{"name":"Obj_rocket","path":"objects/Obj_rocket/Obj_rocket.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Spr_baseHitbox","path":"sprites/Spr_baseHitbox/Spr_baseHitbox.yy",},},
     {"id":{"name":"Spr_blueTip","path":"sprites/Spr_blueTip/Spr_blueTip.yy",},},
     {"id":{"name":"Spr_explosion","path":"sprites/Spr_explosion/Spr_explosion.yy",},},
     {"id":{"name":"Spr_greenTip","path":"sprites/Spr_greenTip/Spr_greenTip.yy",},},

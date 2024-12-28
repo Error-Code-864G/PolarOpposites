@@ -1,1 +1,1 @@
-rot += 0.1;
+if(!paused){ rot += 0.1; }
