@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"boom3.wav",
   "type":0,
-  "volume":0.88,
+  "volume":0.59,
 }

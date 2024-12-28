@@ -24,6 +24,7 @@ if(scrap >= 1){
 }
 
 if(mouse_check_button(mb_left)) && (missileBuilding != "none"){
+	audio_play_sound(launch,1,false)
 	instance_create_layer(x,y,"instances_1",Obj_rocket,{ vectors : [[(mouse_x-x)/30,(mouse_y-y)/30]], color : missileBuilding })
 	missileBuilding = "none";
 	scrap -= 1;

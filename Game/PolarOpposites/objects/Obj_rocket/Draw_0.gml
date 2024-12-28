@@ -24,5 +24,9 @@ switch(color){
 	break;
 }
 
+a = 20;
+draw_arrow(x,y,x+a*vectors[0][0],y,2)
+draw_arrow(x+a*vectors[0][0],y,x+a*vectors[0][0],y+a*vectors[0][1],2)
+draw_arrow(x,y,x+a*vectors[0][0],y+a*vectors[0][1],2)
 
 //draw_text(x,y,vectors);

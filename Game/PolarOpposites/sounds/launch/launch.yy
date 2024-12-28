@@ -1,16 +1,16 @@
 {
   "$GMSound":"",
-  "%Name":"boom1",
+  "%Name":"launch",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
   },
-  "bitDepth":0,
+  "bitDepth":1,
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":5.0,
-  "name":"boom1",
+  "duration":1.704104,
+  "name":"launch",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"boom1.wav",
+  "soundFile":"launch.wav",
   "type":0,
-  "volume":0.53,
+  "volume":0.46,
 }
