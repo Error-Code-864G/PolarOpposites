@@ -1,2 +1,2 @@
-x = Obj_planet.x + 148*dsin(Obj_planet.image_angle+180)
-y = Obj_planet.y + 148*dcos(Obj_planet.image_angle+180)
+x = Obj_planet.x + 140*dsin(Obj_planet.rot+200)
+y = Obj_planet.y + 140*dcos(Obj_planet.rot+200)
