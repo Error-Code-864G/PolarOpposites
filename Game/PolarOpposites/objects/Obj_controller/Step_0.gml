@@ -1,3 +1,3 @@
 layer_x("Background", offset);
 layer_y("Background", offset);
-offset += 0.1;
+if(!paused){ offset += 0.1; }

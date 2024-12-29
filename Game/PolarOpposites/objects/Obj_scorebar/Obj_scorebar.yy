@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_menuController",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"Obj_scorebar",
+  "eventList":[],
   "managed":true,
-  "name":"Obj_menuController",
+  "name":"Obj_scorebar",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -29,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Spr_scorebar",
+    "path":"sprites/Spr_scorebar/Spr_scorebar.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

@@ -1,1 +1,0 @@
-audio_play_sound(MenuMusic,1,true)

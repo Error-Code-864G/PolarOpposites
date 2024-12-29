@@ -1,10 +1,12 @@
 missileBuilding = "none";
 scrap = 1000;
-mask_index = Spr_baseHitbox;
+sprite_index = Spr_baseHitbox;
+globalvar time;
 time = 0;
-points = 0;
+globalvar points;
+points = 1;
 maxhp = 50;
-hp = maxhp;
+hp = 50;
 
 globalvar paused;
 paused = false;

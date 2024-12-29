@@ -29,4 +29,4 @@ switch(missileBuilding){
 }
 draw_text(x,y,scrap)
 
-draw_self();
+//draw_self();
