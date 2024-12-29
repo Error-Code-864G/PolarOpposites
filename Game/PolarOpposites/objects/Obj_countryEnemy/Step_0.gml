@@ -7,7 +7,7 @@ if(scrap >= 1){
 	thisTraj = trajectories[random_range(0, 15)];
 	thisA = thisTraj[1]+(point_direction(x, y, Obj_planet.x,Obj_planet.y)+90);
 	thisColor = colors[random_range(0, 6)];
-	instance_create_layer(x,y,"instances_1",Obj_rocket,{ team : "player", vectors : [[dsin(thisA)*thisTraj[0],dcos(thisA)*thisTraj[0]]], color : thisColor })
+	instance_create_layer(x,y,"instances_1",Obj_rocket,{ team : "enemy", vectors : [[dsin(thisA)*thisTraj[0],dcos(thisA)*thisTraj[0]]], color : thisColor })
 	show_debug_message(thisTraj)
 	scrap = 0;
 }
