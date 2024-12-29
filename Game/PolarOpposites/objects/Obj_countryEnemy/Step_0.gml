@@ -1,15 +1,41 @@
-x = Obj_planet.x + 165*dsin(Obj_planet.rot)
-y = Obj_planet.y + 165*dcos(Obj_planet.rot)
-scrap+=scrapRate/60;
+x = Obj_planet.x + 165*dsin(Obj_planet.rot+180)
+y = Obj_planet.y + 165*dcos(Obj_planet.rot+180)
+
+
 if(scrap >= 1){
-	thisTraj = trajectories[random_range(0, 8)];
-	thisA = thisTraj[1]+(point_direction(x, y, Obj_planet.x,Obj_planet.y)+90);
-	thisColor = colors[random_range(0, 6)];
-	instance_create_layer(x,y,"instances_1",Obj_rocket,{ team : "enemy", vectors : [[dsin(thisA)*thisTraj[0],dcos(thisA)*thisTraj[0]]], color : thisColor })
-	scrap = 0;
+	if(keyboard_check_pressed(ord("1"))){
+		missileBuilding = "blue"
+	}
+	else if(keyboard_check_pressed(ord("2"))){
+		missileBuilding = "green"
+	}
+	else if(keyboard_check_pressed(ord("3"))){
+		missileBuilding = "orange"
+	}
+	else if(keyboard_check_pressed(ord("4"))){
+		missileBuilding = "purple"
+	}
+	else if(keyboard_check_pressed(ord("5"))){
+		missileBuilding = "red"
+	}
+	else if(keyboard_check_pressed(ord("6"))){
+		missileBuilding = "yellow"
+	}
 }
-thisTime = floor(get_timer()/1000000)
-if(thisTime%60 == 0 and recentTime!=thisTime){
-	recentTime = thisTime;
-	scrapRate*=2;
+
+if(mouse_check_button(mb_left)) && (missileBuilding != "none"){
+	instance_create_layer(x,y,"instances_1",Obj_rocket,{ vectors : [[(mouse_x-x)/40,(mouse_y-y)/40]], color : missileBuilding })
+	show_debug_message(string(sqrt(power((mouse_x-x)/40, 2) + power((mouse_y-y)/40, 2)))+", "+string(point_direction(x,y,mouse_x,mouse_y)-90-(point_direction(x, y, Obj_planet.x,Obj_planet.y)-90)));
+	missileBuilding = "none";
+	scrap -= 1;
 }
+
+if(missileBuilding == "none"){  
+	paused = false;  
+	
+	scrap += 0.25*1/60;
+	time++;
+	points++;
+}
+else { paused = true; }
+
