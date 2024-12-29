@@ -1,4 +1,4 @@
-var s = points;
+var s = points*10;
 
 
 

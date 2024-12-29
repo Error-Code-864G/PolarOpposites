@@ -1,4 +1,4 @@
-draw_circle(x,y,8,false)
+//draw_circle(x,y,8,false)
 scale = 10;
 angle = point_direction(x,y,mouse_x,mouse_y)-90
 
@@ -27,6 +27,6 @@ switch(missileBuilding){
 	draw_sprite_ext(Spr_yellowTip,0,x+scale*dsin(angle+180),y+scale*dcos(angle+180),1,1,angle,c_white,0.5)
 	break;
 }
-draw_text(x,y,scrap)
+//raw_text(x,y,scrap)
 
 //draw_self();

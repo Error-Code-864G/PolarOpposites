@@ -3,7 +3,7 @@ y = Obj_planet.y + 165*dcos(Obj_planet.rot+180)
 image_angle = Obj_planet.rot+180;
 
 
-if(points >= 1){
+if(points >= 1) && (!dead){
 	if(keyboard_check_pressed(ord("5"))){
 		missileBuilding = "blue"
 	}
@@ -31,11 +31,22 @@ if(mouse_check_button(mb_left)) && (missileBuilding != "none"){
 	points -= 1;
 }
 
-if(missileBuilding == "none"){  
+if(missileBuilding == "none") && (!dead){  
 	paused = false;  
 
 	time++;
 	points += 0.4*((sqrt(time)+30)/60)/60;
 }
 else { paused = true; }
+
+if(hp <= 0) && (dead == false){ 
+	dead = true; 
+	audio_stop_all(); 
+	instance_create_layer(0,0,"Transition",Obj_roomTimer, { roomToGo: Menu, image_speed : 0.5}); 
+	audio_play_sound(death,1,false,10); paused = true; 
+	
+	if(points > highscore) {highscore = points; }
+}	
+var a = 32;
+if(dead) && (irandom(29) == 0){ instance_create_layer(x+irandom(a)-a/2,y+irandom(a)-a/2,"instances_1",Obj_particle, {sprite_index : Spr_explosion}) }
 
