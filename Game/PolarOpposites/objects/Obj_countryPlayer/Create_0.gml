@@ -5,7 +5,7 @@ globalvar time;
 time = 0;
 globalvar points;
 points = 1;
-maxhp = 10;
+maxhp = 50;
 hp = maxhp;
 
 globalvar paused;

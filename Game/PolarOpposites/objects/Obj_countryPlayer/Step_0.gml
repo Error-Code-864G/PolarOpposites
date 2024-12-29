@@ -36,6 +36,8 @@ if(missileBuilding == "none") && (!dead){
 
 	time++;
 	points += 0.4*((sqrt(time)+30)/60)/60;
+	
+	hp = clamp(hp+1/(60*10),0,maxhp)
 }
 else { paused = true; }
 

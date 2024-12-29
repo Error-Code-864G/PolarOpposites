@@ -88,6 +88,7 @@
     {"id":{"name":"Spr_blueTip","path":"sprites/Spr_blueTip/Spr_blueTip.yy",},},
     {"id":{"name":"Spr_close","path":"sprites/Spr_close/Spr_close.yy",},},
     {"id":{"name":"Spr_colorWheel","path":"sprites/Spr_colorWheel/Spr_colorWheel.yy",},},
+    {"id":{"name":"Spr_credits","path":"sprites/Spr_credits/Spr_credits.yy",},},
     {"id":{"name":"Spr_creditsClicked","path":"sprites/Spr_creditsClicked/Spr_creditsClicked.yy",},},
     {"id":{"name":"Spr_creditsHovered","path":"sprites/Spr_creditsHovered/Spr_creditsHovered.yy",},},
     {"id":{"name":"Spr_creditsNormal","path":"sprites/Spr_creditsNormal/Spr_creditsNormal.yy",},},
@@ -121,8 +122,8 @@
     {"roomId":{"name":"Start","path":"rooms/Start/Start.yy",},},
     {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
-    {"roomId":{"name":"Credits","path":"rooms/Credits/Credits.yy",},},
     {"roomId":{"name":"Info","path":"rooms/Info/Info.yy",},},
+    {"roomId":{"name":"Credits","path":"rooms/Credits/Credits.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
